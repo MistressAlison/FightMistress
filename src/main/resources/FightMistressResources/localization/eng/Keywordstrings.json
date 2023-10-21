@@ -1,0 +1,65 @@
+[
+  {
+    "ID": "braced",
+    "PROPER_NAME": "Braced",
+    "NAMES": [
+      "braced"
+    ],
+    "DESCRIPTION": "Your next #yBlock gaining card gains additional #yBlock."
+  },
+  {
+    "ID": "exposed",
+    "PROPER_NAME": "Exposed",
+    "NAMES": [
+      "expose",
+      "exposed"
+    ],
+    "DESCRIPTION": "Exposed creatures take more damage from Attacks this turn."
+  },
+  {
+    "ID": "stagger",
+    "PROPER_NAME": "Staggered",
+    "NAMES": [
+      "stagger",
+      "staggered"
+    ],
+    "DESCRIPTION": "Staggered creatures deal less damage with Attacks this turn."
+  },
+  {
+    "ID": "infuse",
+    "PROPER_NAME": "Infuse",
+    "NAMES": [
+      "infuse",
+      "infused",
+      "infusion",
+      "infusions"
+    ],
+    "DESCRIPTION": "Add an extra effect onto a card this combat."
+  },
+  {
+    "ID": "grab",
+    "PROPER_NAME": "Grab",
+    "NAMES": [
+      "grab",
+      "grabbed"
+    ],
+    "DESCRIPTION": "Whenever you Grab an enemy, play any adjacent Attacks against them."
+  },
+  {
+    "ID": "combo",
+    "PROPER_NAME": "Combo",
+    "NAMES": [
+      "combo"
+    ],
+    "DESCRIPTION": "Whenever you play an adjacent Attack, also play this."
+  },
+  {
+    "ID": "knock",
+    "PROPER_NAME": "Knock",
+    "NAMES": [
+      "knock",
+      "knocked"
+    ],
+    "DESCRIPTION": "?"
+  }
+]
