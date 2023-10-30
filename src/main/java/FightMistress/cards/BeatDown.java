@@ -23,7 +23,7 @@ public class BeatDown extends AbstractEasyCard implements GlowAdjacentCard {
     public BeatDown() {
         super(ID, 2, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
         baseDamage = damage = 6;
-        tags.add(CustomTags.HOSTESS_GRAB);
+        tags.add(CustomTags.MISTRESS_GRAB);
     }
 
     @Override
@@ -65,7 +65,7 @@ public class BeatDown extends AbstractEasyCard implements GlowAdjacentCard {
                 return true;
             }
             for (AbstractCard c : Wiz.getAdjacentCards(currentCard)) {
-                if (c.hasTag(CustomTags.HOSTESS_GRAB) && !checkedCards.contains(c)) {
+                if (c.hasTag(CustomTags.MISTRESS_GRAB) && !checkedCards.contains(c)) {
                     checkedCards.add(c);
                     return chainCheck(c, cardToCheck);
                 }

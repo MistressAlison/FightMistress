@@ -18,7 +18,7 @@ public class Jab extends AbstractEasyCard {
     public Jab() {
         super(ID, 1, CardType.ATTACK, CardRarity.BASIC, CardTarget.ENEMY);
         baseDamage = damage = 6;
-        tags.add(CustomTags.HOSTESS_COMBO);
+        tags.add(CustomTags.MISTRESS_COMBO);
     }
 
     @Override

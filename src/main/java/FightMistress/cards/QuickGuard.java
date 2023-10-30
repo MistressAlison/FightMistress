@@ -17,7 +17,7 @@ public class QuickGuard extends AbstractEasyCard {
     public QuickGuard() {
         super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
         baseBlock = block = 6;
-        tags.add(CustomTags.HOSTESS_COMBO);
+        tags.add(CustomTags.MISTRESS_COMBO);
     }
 
     @Override

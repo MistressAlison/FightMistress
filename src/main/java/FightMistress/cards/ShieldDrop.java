@@ -22,7 +22,7 @@ public class ShieldDrop extends AbstractEasyCard implements GlowAdjacentCard {
     public ShieldDrop() {
         super(ID, 2, CardType.SKILL, CardRarity.COMMON, CardTarget.ENEMY);
         baseBlock = block = 5;
-        tags.add(CustomTags.HOSTESS_GRAB);
+        tags.add(CustomTags.MISTRESS_GRAB);
     }
 
     @Override
@@ -64,7 +64,7 @@ public class ShieldDrop extends AbstractEasyCard implements GlowAdjacentCard {
                 return true;
             }
             for (AbstractCard c : Wiz.getAdjacentCards(currentCard)) {
-                if (c.hasTag(CustomTags.HOSTESS_GRAB) && !checkedCards.contains(c)) {
+                if (c.hasTag(CustomTags.MISTRESS_GRAB) && !checkedCards.contains(c)) {
                     checkedCards.add(c);
                     return chainCheck(c, cardToCheck);
                 }
