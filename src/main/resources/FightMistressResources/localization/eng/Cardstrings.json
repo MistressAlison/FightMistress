@@ -17,6 +17,10 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "${ModID}:DragonPunch": {
+    "NAME": "Dragon Punch",
+    "DESCRIPTION": "Retain. NL Deal !D! damage. NL Apply !M! Vulnerable. NL Exhaust."
+  },
   "${ModID}:GravityHammer": {
     "NAME": "Gravity Hammer",
     "DESCRIPTION": "Deal !D! damage. NL Deal equal damage to adjacent enemies."
@@ -36,6 +40,10 @@
   "${ModID}:QuickGuard": {
     "NAME": "Quick Guard",
     "DESCRIPTION": "${ModID}:Combo. NL Gain !B! Block."
+  },
+  "${ModID}:RollingPunch": {
+    "NAME": "Rolling Punch",
+    "DESCRIPTION": "stslib:Persist !stslib:persist!. NL Deal !D! damage. NL If you already played Rolling Punch this turn, shuffle a *Dragon\u00a0Punch into your draw pile."
   },
   "${ModID}:ShieldDrop": {
     "NAME": "Shield Drop",
