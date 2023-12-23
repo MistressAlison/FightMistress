@@ -34,5 +34,8 @@
   },
   "${ModID}:XPMod": {
     "EXTENDED_DESCRIPTION": [" NL XP: "]
+  },
+  "${ModID}:ComboMod": {
+    "EXTENDED_DESCRIPTION": ["${ModID}:Combo. NL "]
   }
 }

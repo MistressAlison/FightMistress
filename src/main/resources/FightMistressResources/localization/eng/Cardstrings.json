@@ -31,7 +31,7 @@
   },
   "${ModID}:Jab": {
     "NAME": "Jab",
-    "DESCRIPTION": "${ModID}:Combo. NL Deal !D! damage."
+    "DESCRIPTION": "Deal !D! damage."
   },
   "${ModID}:PlanAhead": {
     "NAME": "Plan Ahead",
@@ -43,7 +43,7 @@
   },
   "${ModID}:QuickGuard": {
     "NAME": "Quick Guard",
-    "DESCRIPTION": "${ModID}:Combo. NL Gain !B! Block."
+    "DESCRIPTION": "Gain !B! Block."
   },
   "${ModID}:RollingPunch": {
     "NAME": "Rolling Punch",

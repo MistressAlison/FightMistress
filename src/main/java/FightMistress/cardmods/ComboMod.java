@@ -1,0 +1,60 @@
+package FightMistress.cardmods;
+
+import FightMistress.MainModfile;
+import FightMistress.patches.CardModExtraPatches;
+import FightMistress.patches.CustomTags;
+import FightMistress.util.FormatHelper;
+import FightMistress.util.Wiz;
+import basemod.abstracts.AbstractCardModifier;
+import com.megacrit.cardcrawl.actions.utility.NewQueueCardAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.CardGroup;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
+
+public class ComboMod extends AbstractCardModifier {
+    public static final String ID = MainModfile.makeID(ComboMod.class.getSimpleName());
+    public static final String[] TEXT = CardCrawlGame.languagePack.getCardStrings(ID).EXTENDED_DESCRIPTION;
+    boolean inherent;
+
+    public ComboMod(boolean inherent) {
+        this.inherent = inherent;
+    }
+
+    @Override
+    public void onInitialApplication(AbstractCard card) {
+        card.tags.add(CustomTags.MISTRESS_COMBO);
+    }
+
+    @Override
+    public void onOtherCardPlayed(AbstractCard card, AbstractCard otherCard, CardGroup group) {
+        if (group == Wiz.adp().hand) {
+            if (otherCard.type == AbstractCard.CardType.ATTACK && Wiz.getAdjacentCards(card).contains(otherCard)) {
+                if (CardModExtraPatches.onOtherCardPlayedTarget != null) {
+                    Wiz.atb(new NewQueueCardAction(card, CardModExtraPatches.onOtherCardPlayedTarget, true, true));
+                } else {
+                    Wiz.atb(new NewQueueCardAction(card, true, true, true));
+                }
+            }
+        }
+    }
+
+    @Override
+    public String modifyDescription(String rawDescription, AbstractCard card) {
+        return FormatHelper.insertBeforeText(rawDescription , TEXT[0]);
+    }
+
+    @Override
+    public boolean shouldApply(AbstractCard card) {
+        return !card.hasTag(CustomTags.MISTRESS_COMBO);
+    }
+
+    @Override
+    public boolean isInherent(AbstractCard card) {
+        return inherent;
+    }
+
+    @Override
+    public AbstractCardModifier makeCopy() {
+        return new ComboMod(inherent);
+    }
+}
