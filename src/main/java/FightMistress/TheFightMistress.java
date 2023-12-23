@@ -71,8 +71,8 @@ public class TheFightMistress extends CustomPlayer {
     @Override
     public CharSelectInfo getLoadout() {
         return new CharSelectInfo(NAMES[0], TEXT[0],
-                85,
-                85,
+                75,
+                75,
                 0,
                 99,
                 5, this, getStartingRelics(),
