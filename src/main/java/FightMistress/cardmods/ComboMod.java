@@ -54,6 +54,11 @@ public class ComboMod extends AbstractCardModifier {
     }
 
     @Override
+    public String identifier(AbstractCard card) {
+        return ID;
+    }
+
+    @Override
     public AbstractCardModifier makeCopy() {
         return new ComboMod(inherent);
     }
