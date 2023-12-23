@@ -34,5 +34,10 @@
       "Choose a card to Guide.",
       "Choose "," cards to Guide."
     ]
+  },
+  "${ModID}:RearrangeAction": {
+    "TEXT": [
+      "Rearrange"
+    ]
   }
 }

@@ -25,6 +25,10 @@
     "NAME": "Jab",
     "DESCRIPTION": "${ModID}:Combo. NL Deal !D! damage."
   },
+  "${ModID}:PlanAhead": {
+    "NAME": "Plan Ahead",
+    "DESCRIPTION": "Gain !B! Block. NL Rearrange your hand."
+  },
   "${ModID}:PowerShot": {
     "NAME": "Power Shot",
     "DESCRIPTION": "Deal !D! damage. NL Costs 0 if adjacent to a Power."
