@@ -11,7 +11,7 @@
   },
   "${ModID}:BeatDown": {
     "NAME": "Beat Down",
-    "DESCRIPTION": "${ModID}:Grab. NL Deal !D! damage."
+    "DESCRIPTION": "Deal !D! damage."
   },
   "${ModID}:Bunker": {
     "NAME": "Bunker",
@@ -51,7 +51,7 @@
   },
   "${ModID}:ShieldDrop": {
     "NAME": "Shield Drop",
-    "DESCRIPTION": "${ModID}:Grab. NL Gain !B! Block."
+    "DESCRIPTION": "Gain !B! Block."
   },
   "${ModID}:Strike": {
     "NAME": "Strike",

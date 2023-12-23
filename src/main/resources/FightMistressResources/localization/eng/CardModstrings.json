@@ -37,5 +37,8 @@
   },
   "${ModID}:ComboMod": {
     "EXTENDED_DESCRIPTION": ["${ModID}:Combo. NL "]
+  },
+  "${ModID}:GrabMod": {
+    "EXTENDED_DESCRIPTION": ["${ModID}:Grab. NL "]
   }
 }
