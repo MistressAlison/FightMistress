@@ -61,7 +61,7 @@ public class TheFightMistress extends CustomPlayer {
                 SHOULDER1,
                 SHOULDER2,
                 CORPSE,
-                getLoadout(), 10.0F, -10.0F, 220.0F, 240.0F, new EnergyManager(3)); // 20.0F, -10.0F, 166.0F, 327.0F
+                getLoadout(), 10.0F, -10.0F, 200.0F, 250.0F, new EnergyManager(3)); // 20.0F, -10.0F, 166.0F, 327.0F
 
 
         dialogX = (drawX + 0.0F * Settings.scale);
