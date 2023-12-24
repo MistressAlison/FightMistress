@@ -20,8 +20,8 @@ public class GrabMod extends AbstractCardModifier implements GlowAdjacentModifie
     public static final String ID = MainModfile.makeID(GrabMod.class.getSimpleName());
     public static final String[] TEXT = CardCrawlGame.languagePack.getCardStrings(ID).EXTENDED_DESCRIPTION;
     private static final Color glowColor = Color.GOLD.cpy();
-    private static ArrayList<AbstractCard> justFlashed = new ArrayList<>();
-    private final ArrayList<AbstractCard> checkedCards = new ArrayList<>();
+    private static final ArrayList<AbstractCard> justFlashed = new ArrayList<>();
+    private static final ArrayList<AbstractCard> checkedCards = new ArrayList<>();
     boolean inherent;
 
     static {
