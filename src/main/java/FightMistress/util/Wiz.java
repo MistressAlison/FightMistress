@@ -2,6 +2,7 @@ package FightMistress.util;
 
 import FightMistress.actions.TimedVFXAction;
 import FightMistress.patches.CardCounterPatches;
+import FightMistress.patches.ScalePatches;
 import FightMistress.powers.LosePowerPower;
 import FightMistress.powers.NextTurnPowerPower;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -305,5 +306,9 @@ public class Wiz {
         ArrayList<AbstractMonster> ret = new ArrayList<>();
         forAdjacentMonsters(entity, ret::add);
         return ret;
+    }
+
+    public static boolean isBigger(AbstractCreature c) {
+        return (Wiz.adp().hb_w * Wiz.adp().hb_h) < (ScalePatches.ScaleField.finalScale.get(c)*c.hb_w * ScalePatches.ScaleField.finalScale.get(c)*c.hb_h);
     }
 }
