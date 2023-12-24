@@ -22,7 +22,7 @@ public class PowerShot extends AbstractEasyCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new DoAction(() -> GameSpeedController.addSlowMotionEffect(new GameSpeedController.SlowMotionEffect(2, 1/8f))));
-        dmg(m, AbstractGameAction.AttackEffect.BLUNT_HEAVY);
+        dmg(m, AbstractGameAction.AttackEffect.SLASH_HEAVY);
         addToBot(new DoAction(() -> GameSpeedController.addSlowMotionEffect(new GameSpeedController.SlowMotionEffect(16, 1/2f))));
 
     }
