@@ -13,6 +13,10 @@
     "NAME": "Beat Down",
     "DESCRIPTION": "Deal !D! damage."
   },
+  "${ModID}:Blitz": {
+    "NAME": "Blitz",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards."
+  },
   "${ModID}:Bunker": {
     "NAME": "Bunker",
     "DESCRIPTION": "Gain !B! Block. NL Upgrade adjacent cards."
@@ -52,6 +56,10 @@
   "${ModID}:ShieldDrop": {
     "NAME": "Shield Drop",
     "DESCRIPTION": "Gain !B! Block."
+  },
+  "${ModID}:SliceAndDice": {
+    "NAME": "Slice and Dice",
+    "DESCRIPTION": "Deal !D! damage. NL Repeat at half damage. NL Repeat at quarter damage twice."
   },
   "${ModID}:Strike": {
     "NAME": "Strike",
