@@ -65,6 +65,10 @@
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
   },
+  "${ModID}:Sweep": {
+    "NAME": "Sweep",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Enemies larger than you are hit twice."
+  },
   "${ModID}:Taunt": {
     "NAME": "Taunt",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Vulnerable."
