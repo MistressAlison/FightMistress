@@ -15,7 +15,7 @@ public class PowerShot extends AbstractEasyCard {
     public final static String ID = makeID(PowerShot.class.getSimpleName());
 
     public PowerShot() {
-        super(ID, 2, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
         baseDamage = damage = 16;
     }
 
