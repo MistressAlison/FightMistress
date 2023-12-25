@@ -53,6 +53,10 @@
     "NAME": "Rolling Punch",
     "DESCRIPTION": "stslib:Persist !stslib:persist!. NL Deal !D! damage. NL If you already played Rolling Punch this turn, shuffle a *Dragon\u00a0Punch into your draw pile."
   },
+  "${ModID}:ShieldBash": {
+    "NAME": "Shield Bash",
+    "DESCRIPTION": "Gain !B! Block. NL Deal !D! damage."
+  },
   "${ModID}:ShieldDrop": {
     "NAME": "Shield Drop",
     "DESCRIPTION": "Gain !B! Block."
