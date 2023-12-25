@@ -45,6 +45,10 @@
     "NAME": "Jab",
     "DESCRIPTION": "Deal !D! damage."
   },
+  "${ModID}:KneeSmash": {
+    "NAME": "Knee Smash",
+    "DESCRIPTION": "Deal !D! damage. NL Deals double damage to enemies with Vulnerable."
+  },
   "${ModID}:PlanAhead": {
     "NAME": "Plan Ahead",
     "DESCRIPTION": "Gain !B! Block. NL Rearrange your hand."
@@ -92,6 +96,10 @@
   "${ModID}:Taunt": {
     "NAME": "Taunt",
     "DESCRIPTION": "Gain !B! Block. NL Apply !M! Vulnerable."
+  },
+  "${ModID}:Throw": {
+    "NAME": "Throw",
+    "DESCRIPTION": "Apply !M! Vulnerable. NL The next Attack you play costs 0."
   },
   "${ModID}:TripleStrike": {
     "NAME": "Triple Strike",
