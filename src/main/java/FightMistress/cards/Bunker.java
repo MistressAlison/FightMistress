@@ -6,7 +6,7 @@ import FightMistress.util.Wiz;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.common.UpgradeSpecificCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
-import com.megacrit.cardcrawl.cards.red.Sentinel;
+import com.megacrit.cardcrawl.cards.red.Entrench;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
@@ -36,7 +36,7 @@ public class Bunker extends AbstractEasyCard implements GlowAdjacentCard {
 
     @Override
     public String cardArtCopy() {
-        return Sentinel.ID;
+        return Entrench.ID;
     }
 
     @Override
