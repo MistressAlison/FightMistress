@@ -29,9 +29,17 @@
     "NAME": "Dragon Punch",
     "DESCRIPTION": "Retain. NL Deal !D! damage. NL Apply !M! Vulnerable. NL Exhaust."
   },
+  "${ModID}:FromBeyond": {
+    "NAME": "From Beyond",
+    "DESCRIPTION": "${ModID}:Sheathe a card in your exhaust pile. NL Exhaust."
+  },
   "${ModID}:GravityHammer": {
     "NAME": "Gravity Hammer",
     "DESCRIPTION": "Deal !D! damage. NL Deal equal damage to adjacent enemies."
+  },
+  "${ModID}:Iaido": {
+    "NAME": "Iaido",
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Sheathe all Attacks in your hand. NL Exhaust."
   },
   "${ModID}:Jab": {
     "NAME": "Jab",
@@ -68,6 +76,10 @@
   "${ModID}:Strike": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
+  },
+  "${ModID}:Subterfuge": {
+    "NAME": "Subterfuge",
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Sheathe a card in your hand."
   },
   "${ModID}:Sweep": {
     "NAME": "Sweep",
