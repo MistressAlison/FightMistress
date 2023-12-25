@@ -61,5 +61,14 @@
       "knocked"
     ],
     "DESCRIPTION": "?"
+  },
+  {
+    "ID": "sheathe",
+    "PROPER_NAME": "Sheathe",
+    "NAMES": [
+      "sheathe",
+      "sheathed"
+    ],
+    "DESCRIPTION": "A Sheathed card is set aside. Whenever you are attacked, your next Sheathed card is played."
   }
 ]

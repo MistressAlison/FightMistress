@@ -39,5 +39,12 @@
     "TEXT": [
       "Rearrange"
     ]
+  },
+  "${ModID}:SheatheCardsAction": {
+    "TEXT": [
+      "Sheathe",
+      "Choose a card to Sheathe.",
+      "Choose "," cards to Sheathe."
+    ]
   }
 }

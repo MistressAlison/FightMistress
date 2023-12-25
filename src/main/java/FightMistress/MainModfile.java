@@ -10,6 +10,7 @@ import FightMistress.powers.StaggerPower;
 import FightMistress.powers.interfaces.InfusionTriggerPower;
 import FightMistress.powers.interfaces.OnUpgradePower;
 import FightMistress.relics.AbstractEasyRelic;
+import FightMistress.ui.SheathedCardManager;
 import FightMistress.util.*;
 import FightMistress.vfx.ShaderTest;
 import basemod.AutoAdd;
@@ -30,6 +31,7 @@ import com.evacipated.cardcrawl.modthespire.Loader;
 import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.helpers.CardHelper;
@@ -48,7 +50,7 @@ public class MainModfile implements
         EditRelicsSubscriber,
         EditStringsSubscriber,
         EditKeywordsSubscriber,
-        EditCharactersSubscriber, PostInitializeSubscriber, PostUpdateSubscriber, AddAudioSubscriber {
+        EditCharactersSubscriber, PostInitializeSubscriber, PostUpdateSubscriber, AddAudioSubscriber, OnPlayerDamagedSubscriber {
 
     public static final String modID = "FightMistress";
     public static final Logger logger = LogManager.getLogger(MainModfile.class.getName());
@@ -347,5 +349,11 @@ public class MainModfile implements
                 }
             }
         }
+    }
+
+    @Override
+    public int receiveOnPlayerDamaged(int i, DamageInfo damageInfo) {
+        SheathedCardManager.playNextCard(damageInfo);
+        return i;
     }
 }
