@@ -53,6 +53,10 @@
     "NAME": "Power Shot",
     "DESCRIPTION": "Deal !D! damage. NL Costs 0 if adjacent to a Power."
   },
+  "${ModID}:PreemptiveStrike": {
+    "NAME": "Preemptive Strike",
+    "DESCRIPTION": "Deal !D! damage. NL If an adjacent card is an Attack, gain {@@}{!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}."
+  },
   "${ModID}:QuickGuard": {
     "NAME": "Quick Guard",
     "DESCRIPTION": "Gain !B! Block."
