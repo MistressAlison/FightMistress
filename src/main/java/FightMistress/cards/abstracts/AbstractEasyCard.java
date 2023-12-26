@@ -117,6 +117,11 @@ public abstract class AbstractEasyCard extends CustomCard {
     public boolean upgradedSecondBlock;
     public boolean isSecondBlockModified;
 
+    public int thirdMagic = -1;
+    public int baseThirdMagic = -1;
+    public boolean upgradedThirdMagic;
+    public boolean isThirdMagicModified;
+
     public int info = -1;
     public int baseInfo = -1;
     public boolean upgradedInfo;
@@ -254,6 +259,8 @@ public abstract class AbstractEasyCard extends CustomCard {
         isSecondDamageModified = false;
         secondBlock = baseSecondBlock;
         isSecondBlockModified = false;
+        thirdMagic = baseThirdMagic;
+        isThirdMagicModified = false;
         info = baseInfo;
         isInfoModified = false;
     }
@@ -272,6 +279,10 @@ public abstract class AbstractEasyCard extends CustomCard {
             secondBlock = baseSecondBlock;
             isSecondBlockModified = true;
         }
+        if (upgradedThirdMagic) {
+            thirdMagic = baseThirdMagic;
+            isThirdMagicModified = true;
+        }
         if (upgradedInfo) {
             info = baseInfo;
             isInfoModified = true;
@@ -282,6 +293,12 @@ public abstract class AbstractEasyCard extends CustomCard {
         baseSecondMagic += amount;
         secondMagic = baseSecondMagic;
         upgradedSecondMagic = true;
+    }
+
+    protected void upgradeThirdMagic(int amount) {
+        baseThirdMagic += amount;
+        thirdMagic = baseThirdMagic;
+        upgradedThirdMagic = true;
     }
 
     protected void upgradeSecondDamage(int amount) {
