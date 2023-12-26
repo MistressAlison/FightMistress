@@ -46,13 +46,13 @@
     "DESCRIPTION": "${ModID}:Sheathe a copy of the last Attack played this combat. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "${ModID}:Sheathe a copy of the last Attack played this combat."
   },
-  "${ModID}:Feint": {
-    "NAME": "Feint",
-    "DESCRIPTION": "Deal !D! damage. NL Gain !M! ${ModID}:Charged. NL Ignores Block."
-  },
   "${ModID}:DragonPunch": {
     "NAME": "Dragon Punch",
     "DESCRIPTION": "Retain. NL Deal !D! damage. NL Apply !M! Vulnerable. NL Exhaust."
+  },
+  "${ModID}:Feint": {
+    "NAME": "Feint",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! ${ModID}:Charged. NL Ignores Block."
   },
   "${ModID}:FromBeyond": {
     "NAME": "From Beyond",
