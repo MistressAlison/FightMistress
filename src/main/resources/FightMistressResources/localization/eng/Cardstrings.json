@@ -25,6 +25,10 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "${ModID}:Dominate": {
+    "NAME": "Dominate",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Gain [E] for each enemy with Vulnerable."
+  },
   "${ModID}:DragonPunch": {
     "NAME": "Dragon Punch",
     "DESCRIPTION": "Retain. NL Deal !D! damage. NL Apply !M! Vulnerable. NL Exhaust."
@@ -40,6 +44,10 @@
   "${ModID}:Iaido": {
     "NAME": "Iaido",
     "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Sheathe all Attacks in your hand. NL Exhaust."
+  },
+  "${ModID}:Impale": {
+    "NAME": "Impale",
+    "DESCRIPTION": "Deal !D! damage. NL Discard 1 card."
   },
   "${ModID}:Jab": {
     "NAME": "Jab",
@@ -105,5 +113,13 @@
     "NAME": "Triple Strike",
     "DESCRIPTION": "Deal !D! damage !M! times.",
     "EXTENDED_DESCRIPTION": ["Null Strike", "Single Strike", "Double Strike", "Triple Strike", "Quadruple Strike", "Quintuple Strike", "Sextuple Strike", "Septuple Strike", "Octuple Strike", "Nonuple Strike", "Omni Strike"]
+  },
+  "${ModID}:Warstrike": {
+    "NAME": "Warstrike",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL If the enemy already had Vulnerable, apply !M! Weak."
+  },
+  "${ModID}:Unleash": {
+    "NAME": "Unleash",
+    "DESCRIPTION": "Deal !D! damage. NL This turn, your next Attack is played twice. NL Exhaust."
   }
 }
