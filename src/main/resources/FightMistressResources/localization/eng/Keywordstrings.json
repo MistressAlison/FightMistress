@@ -70,5 +70,13 @@
       "sheathed"
     ],
     "DESCRIPTION": "A Sheathed card is set aside. Whenever you are attacked, your next Sheathed card is played."
+  },
+  {
+    "ID": "charged",
+    "PROPER_NAME": "Charged",
+    "NAMES": [
+      "charged"
+    ],
+    "DESCRIPTION": "Your next Attack deals #b25% more damage per Charged."
   }
 ]

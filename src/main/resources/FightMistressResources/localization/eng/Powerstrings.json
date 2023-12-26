@@ -34,5 +34,9 @@
   "${ModID}:GamblerPower": {
     "NAME": "Gambler",
     "DESCRIPTIONS": ["Whenever an Attack enters your hand, increase its damage by #b0 to #b"," this combat."]
+  },
+  "${ModID}:ChargedPower": {
+    "NAME": "Charged",
+    "DESCRIPTIONS": ["Your next Attack deals #b","% additional damage."]
   }
 }

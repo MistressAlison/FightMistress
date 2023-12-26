@@ -13,6 +13,7 @@ public class KeywordManager {
     public static String COMBO;
     public static String KNOCK;
     public static String SHEATHE;
+    public static String CHARGED;
 
     public static String getKeyword(String ID) {
         return keywordMap.getOrDefault(ID, "");

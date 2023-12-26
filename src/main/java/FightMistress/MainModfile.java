@@ -6,6 +6,7 @@ import FightMistress.cards.interfaces.GlowAdjacentCard;
 import FightMistress.icons.IconContainer;
 import FightMistress.patches.GlowChangePatch;
 import FightMistress.powers.BracedPower;
+import FightMistress.powers.ChargedPower;
 import FightMistress.powers.StaggerPower;
 import FightMistress.powers.interfaces.InfusionTriggerPower;
 import FightMistress.powers.interfaces.OnUpgradePower;
@@ -257,6 +258,7 @@ public class MainModfile implements
         //Add Powers
         BaseMod.addPower(BracedPower.class, BracedPower.POWER_ID);
         BaseMod.addPower(StaggerPower.class, StaggerPower.POWER_ID);
+        BaseMod.addPower(ChargedPower.class, ChargedPower.POWER_ID);
 
         //Wide Potions
         if (Loader.isModLoaded("widepotions")) {
