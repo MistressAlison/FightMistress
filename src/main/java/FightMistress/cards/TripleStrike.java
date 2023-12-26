@@ -1,8 +1,10 @@
 package FightMistress.cards;
 
+import FightMistress.actions.ModifyMagicAction;
 import FightMistress.cards.abstracts.AbstractEasyCard;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.red.Pummel;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -14,8 +16,8 @@ public class TripleStrike extends AbstractEasyCard {
     private int lastChecked = -1;
 
     public TripleStrike() {
-        super(ID, 1, CardType.ATTACK, CardRarity.COMMON, CardTarget.ENEMY);
-        baseDamage = damage = 2;
+        super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        baseDamage = damage = 5;
         baseMagicNumber = magicNumber = 3;
         tags.add(CardTags.STRIKE);
     }
@@ -25,11 +27,20 @@ public class TripleStrike extends AbstractEasyCard {
         for (int i = 0 ; i < magicNumber ; i++) {
             dmg(m, i == magicNumber-1 ? AbstractGameAction.AttackEffect.BLUNT_HEAVY : AbstractGameAction.AttackEffect.BLUNT_LIGHT);
         }
+        addToBot(new ModifyMagicAction(uuid, 1));
     }
 
     @Override
     public void upp() {
-        upgradeDamage(1);
+        upgradeDamage(2);
+    }
+
+    @Override
+    public AbstractCard makeStatEquivalentCopy() {
+        AbstractCard copy = super.makeStatEquivalentCopy();
+        copy.baseMagicNumber = baseMagicNumber;
+        copy.magicNumber = magicNumber;
+        return copy;
     }
 
     @Override

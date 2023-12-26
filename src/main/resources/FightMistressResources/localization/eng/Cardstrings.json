@@ -156,7 +156,7 @@
   },
   "${ModID}:TripleStrike": {
     "NAME": "Triple Strike",
-    "DESCRIPTION": "Deal !D! damage !M! times.",
+    "DESCRIPTION": "Deal !D! damage !M! times. NL Increase this card's hits by 1 this combat.",
     "EXTENDED_DESCRIPTION": ["Null Strike", "Single Strike", "Double Strike", "Triple Strike", "Quadruple Strike", "Quintuple Strike", "Sextuple Strike", "Septuple Strike", "Octuple Strike", "Nonuple Strike", "Omni Strike"]
   },
   "${ModID}:Warstrike": {
