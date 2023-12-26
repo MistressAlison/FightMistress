@@ -14,7 +14,7 @@ public class QuickGuard extends AbstractEasyCard {
 
     public QuickGuard() {
         super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
-        baseBlock = block = 6;
+        baseBlock = block = 5;
         CardModifierManager.addModifier(this, new ComboMod(true));
     }
 
