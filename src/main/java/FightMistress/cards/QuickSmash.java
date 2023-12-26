@@ -1,6 +1,8 @@
 package FightMistress.cards;
 
+import FightMistress.cardmods.ComboMod;
 import FightMistress.cards.abstracts.AbstractEasyCard;
+import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.red.Headbutt;
@@ -13,10 +15,10 @@ public class QuickSmash extends AbstractEasyCard {
     public final static String ID = makeID(QuickSmash.class.getSimpleName());
 
     public QuickSmash() {
-        super(ID, 0, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
         baseDamage = damage = 7;
         baseMagicNumber = magicNumber = 1;
-        exhaust = true;
+        CardModifierManager.addModifier(this, new ComboMod(true));
     }
 
     @Override

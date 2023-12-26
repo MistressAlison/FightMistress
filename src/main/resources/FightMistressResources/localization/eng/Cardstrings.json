@@ -104,7 +104,7 @@
   },
   "${ModID}:QuickSmash": {
     "NAME": "Quick Smash",
-    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card{@@}{!M!|>1=s}. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card{@@}{!M!|>1=s}."
   },
   "${ModID}:Rally": {
     "NAME": "Rally",
