@@ -121,7 +121,7 @@ public class GrabMod extends AbstractCardModifier implements GlowAdjacentModifie
                 return true;
             }
             for (AbstractCard c : Wiz.getAdjacentCards(currentCard)) {
-                if (c.hasTag(CustomTags.MISTRESS_GRAB) && !checkedCards.contains(c)) {
+                if (c.hasTag(CustomTags.MISTRESS_GRAB) && c.type == AbstractCard.CardType.ATTACK && !checkedCards.contains(c)) {
                     checkedCards.add(c);
                     return chainCheck(c, cardToCheck);
                 }
