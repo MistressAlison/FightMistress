@@ -1,5 +1,7 @@
 package FightMistress.patches;
 
+import FightMistress.cards.Sanctuary;
+import FightMistress.util.Wiz;
 import com.evacipated.cardcrawl.modthespire.lib.*;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -16,6 +18,9 @@ public class DontExhaustOnUsePatches {
     public static class DontExhaust {
         @SpireInsertPatch(locator = Locator.class)
         public static void plz(UseCardAction __instance, AbstractCard card) {
+            if (Wiz.getAdjacentCards(card).stream().anyMatch(c -> c instanceof Sanctuary)) {
+                __instance.exhaustCard = false;
+            }
             if (DontExhaustField.dontExhaustOnUseOnce.get(card)) {
                 __instance.exhaustCard = false;
                 DontExhaustField.dontExhaustOnUseOnce.set(card, false);

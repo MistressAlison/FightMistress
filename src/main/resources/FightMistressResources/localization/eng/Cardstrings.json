@@ -21,6 +21,14 @@
     "NAME": "Bunker",
     "DESCRIPTION": "Gain !B! Block. NL Upgrade adjacent cards."
   },
+  "${ModID}:Burnout": {
+    "NAME": "Burnout",
+    "DESCRIPTION": "Exhaust adjacent cards. NL Draw !M! cards."
+  },
+  "${ModID}:Capture": {
+    "NAME": "Capture",
+    "DESCRIPTION": "Apply !M! ${ModID}:Exposed."
+  },
   "${ModID}:Defend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
@@ -32,6 +40,11 @@
   "${ModID}:Dominate": {
     "NAME": "Dominate",
     "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Gain [E] for each enemy with Vulnerable."
+  },
+  "${ModID}:DoubleEdged": {
+    "NAME": "Double Edged",
+    "DESCRIPTION": "${ModID}:Sheathe a copy of the last Attack played this combat. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "${ModID}:Sheathe a copy of the last Attack played this combat."
   },
   "${ModID}:Feint": {
     "NAME": "Feint",
@@ -93,9 +106,17 @@
     "NAME": "Quick Smash",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! card{@@}{!M!|>1=s}. NL Exhaust."
   },
+  "${ModID}:Rally": {
+    "NAME": "Rally",
+    "DESCRIPTION": "Gain !${ModID}:M2! ${ModID}:Charged. NL Draw !M! card{@@}{!M!|>1=s}. NL Discard !M! card{!M!|>1=s}."
+  },
   "${ModID}:RollingPunch": {
     "NAME": "Rolling Punch",
     "DESCRIPTION": "stslib:Persist !stslib:persist!. NL Deal !D! damage. NL If you already played Rolling Punch this turn, shuffle a *Dragon\u00a0Punch into your draw pile."
+  },
+  "${ModID}:Sanctuary": {
+    "NAME": "Sanctuary",
+    "DESCRIPTION": "Gain !B! Block. NL While held, adjacent cards will not Exhaust on play."
   },
   "${ModID}:ShieldBash": {
     "NAME": "Shield Bash",
@@ -108,6 +129,10 @@
   "${ModID}:SliceAndDice": {
     "NAME": "Slice and Dice",
     "DESCRIPTION": "Deal !D! damage. NL Repeat at half damage. NL Repeat at quarter damage twice."
+  },
+  "${ModID}:Slugger": {
+    "NAME": "Slugger",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! ${ModID}:Exposed."
   },
   "${ModID}:Strike": {
     "NAME": "Strike",

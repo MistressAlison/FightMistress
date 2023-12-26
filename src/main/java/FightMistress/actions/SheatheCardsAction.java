@@ -16,7 +16,7 @@ import java.util.function.Consumer;
 import java.util.function.Predicate;
 
 public class SheatheCardsAction extends AbstractGameAction {
-    private static final String[] TEXT = CardCrawlGame.languagePack.getUIString(MainModfile.makeID("SheatheCardsAction")).TEXT;
+    public static final String[] TEXT = CardCrawlGame.languagePack.getUIString(MainModfile.makeID("SheatheCardsAction")).TEXT;
     private final CardGroup group;
     private final boolean anyNumber;
     private final boolean canPickZero;
