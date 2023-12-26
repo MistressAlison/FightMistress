@@ -18,7 +18,7 @@ public class Bunker extends AbstractEasyCard implements GlowAdjacentCard {
 
     public Bunker() {
         super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
-        baseBlock = block = 5;
+        baseBlock = block = 6;
     }
 
     @Override
