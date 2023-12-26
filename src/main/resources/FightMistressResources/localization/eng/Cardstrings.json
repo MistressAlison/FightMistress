@@ -25,9 +25,17 @@
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "${ModID}:DescentOfDarkness": {
+    "NAME": "Descent of Darkness",
+    "DESCRIPTION": "Deal !D! damage twice. NL If this would deal !${ModID}:M2! or less unblocked damage, increase it to !${ModID}:M3!."
+  },
   "${ModID}:Dominate": {
     "NAME": "Dominate",
     "DESCRIPTION": "Deal !D! damage to ALL enemies. NL Gain [E] for each enemy with Vulnerable."
+  },
+  "${ModID}:Feint": {
+    "NAME": "Feint",
+    "DESCRIPTION": "Deal !D! damage. NL Gain !M! ${ModID}:Charged. NL Ignores Block."
   },
   "${ModID}:DragonPunch": {
     "NAME": "Dragon Punch",
@@ -57,6 +65,10 @@
     "NAME": "Knee Smash",
     "DESCRIPTION": "Deal !D! damage. NL Deals double damage to enemies with Vulnerable."
   },
+  "${ModID}:Mislead": {
+    "NAME": "Mislead",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! ${ModID}:Charged."
+  },
   "${ModID}:PlanAhead": {
     "NAME": "Plan Ahead",
     "DESCRIPTION": "Gain !B! Block. NL Rearrange your hand."
@@ -68,6 +80,10 @@
   "${ModID}:PreemptiveStrike": {
     "NAME": "Preemptive Strike",
     "DESCRIPTION": "Deal !D! damage. NL If an adjacent card is an Attack, gain {@@}{!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}."
+  },
+  "${ModID}:Puncture": {
+    "NAME": "Puncture",
+    "DESCRIPTION": "stslib:Persist !stslib:persist!. NL Deal !D! damage twice."
   },
   "${ModID}:QuickGuard": {
     "NAME": "Quick Guard",
