@@ -89,6 +89,10 @@
     "NAME": "Quick Guard",
     "DESCRIPTION": "Gain !B! Block."
   },
+  "${ModID}:QuickSmash": {
+    "NAME": "Quick Smash",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card{@@}{!M!|>1=s}. NL Exhaust."
+  },
   "${ModID}:RollingPunch": {
     "NAME": "Rolling Punch",
     "DESCRIPTION": "stslib:Persist !stslib:persist!. NL Deal !D! damage. NL If you already played Rolling Punch this turn, shuffle a *Dragon\u00a0Punch into your draw pile."
