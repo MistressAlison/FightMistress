@@ -1,6 +1,7 @@
 package FightMistress.powers;
 
 import FightMistress.MainModfile;
+import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -37,7 +38,7 @@ public class ChargedPower extends AbstractPower {
 
     public void onUseCard(AbstractCard card, UseCardAction action) {
         if (card.type == AbstractCard.CardType.ATTACK) {
-            this.addToBot(new RemoveSpecificPowerAction(this.owner, this.owner, this));
+            this.addToBot(new ReducePowerAction(this.owner, this.owner, this, amount));
         }
     }
 }
