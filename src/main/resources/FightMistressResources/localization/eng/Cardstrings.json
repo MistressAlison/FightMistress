@@ -67,7 +67,7 @@
   },
   "${ModID}:Mislead": {
     "NAME": "Mislead",
-    "DESCRIPTION": "Gain !B! Block. NL Gain !M! ${ModID}:Charged."
+    "DESCRIPTION": "Gain !B! Block. NL Draw !M! card{@@}{!M!|>1=s}."
   },
   "${ModID}:PlanAhead": {
     "NAME": "Plan Ahead",

@@ -1,8 +1,7 @@
 package FightMistress.cards;
 
 import FightMistress.cards.abstracts.AbstractEasyCard;
-import FightMistress.powers.ChargedPower;
-import FightMistress.util.Wiz;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.green.Distraction;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -21,7 +20,7 @@ public class Mislead extends AbstractEasyCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         blck();
-        Wiz.applyToSelf(new ChargedPower(p, magicNumber));
+        addToBot(new DrawCardAction(magicNumber));
     }
 
     @Override
