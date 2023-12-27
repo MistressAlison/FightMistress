@@ -3,7 +3,6 @@ package FightMistress.cards;
 import FightMistress.cards.abstracts.AbstractEasyCard;
 import FightMistress.util.Wiz;
 import com.megacrit.cardcrawl.cards.blue.Rebound;
-import com.megacrit.cardcrawl.cards.green.Outmaneuver;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;

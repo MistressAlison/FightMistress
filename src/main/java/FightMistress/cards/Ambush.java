@@ -1,12 +1,8 @@
 package FightMistress.cards;
 
 import FightMistress.cards.abstracts.AbstractEasyCard;
-import FightMistress.cards.tokens.MachPunch;
-import FightMistress.powers.AcceleratePlusPower;
-import FightMistress.powers.AcceleratePower;
 import FightMistress.powers.AmbushPower;
 import FightMistress.util.Wiz;
-import com.megacrit.cardcrawl.cards.green.Expertise;
 import com.megacrit.cardcrawl.cards.green.Setup;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
