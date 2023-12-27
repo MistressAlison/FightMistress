@@ -5,9 +5,14 @@
     "UPGRADE_DESCRIPTION": "Upgrade description",
     "EXTENDED_DESCRIPTION": ["Extra Stuff"]
   },
+  "${ModID}:Accelerate": {
+    "NAME": "Accelerate",
+    "DESCRIPTION": "At the end of your turn, shuffle a *Mach\u00a0Punch into your draw pile.",
+    "UPGRADE_DESCRIPTION": "At the end of your turn, shuffle a *Mach\u00a0Punch+ into your draw pile."
+  },
   "${ModID}:Assault": {
     "NAME": "Assault",
-    "DESCRIPTION": "Deal !D! damage. NL Shuffle !M! *Mach\u00a0Punch into your draw pile."
+    "DESCRIPTION": "Deal !D! damage. NL Shuffle !M! *Mach\u00a0Punches into your draw pile."
   },
   "${ModID}:Backswing": {
     "NAME": "Backswing",
@@ -75,13 +80,26 @@
     "NAME": "Gravity Hammer",
     "DESCRIPTION": "Deal !D! damage. NL Deal equal damage to adjacent enemies."
   },
+  "${ModID}:Haunted": {
+    "NAME": "Haunted",
+    "DESCRIPTION": "Gain !B! Block. NL Add !M! *Voices into your hand."
+  },
   "${ModID}:Iaido": {
     "NAME": "Iaido",
     "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Sheathe all Attacks in your hand. NL Exhaust."
   },
+  "${ModID}:IAmAbove": {
+    "NAME": "I Am Above",
+    "DESCRIPTION": "You may pay for cards with HP if you do not have enough Energy."
+  },
   "${ModID}:Impale": {
     "NAME": "Impale",
     "DESCRIPTION": "Deal !D! damage. NL Discard 1 card."
+  },
+  "${ModID}:InTheDark": {
+    "NAME": "In The Dark",
+    "DESCRIPTION": "At the start of your turn, add a *Voices into your hand.",
+    "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add a *Voices into your hand."
   },
   "${ModID}:Jab": {
     "NAME": "Jab",
@@ -98,6 +116,10 @@
   "${ModID}:Mislead": {
     "NAME": "Mislead",
     "DESCRIPTION": "Gain !B! Block. NL Draw !M! card{@@}{!M!|>1=s}."
+  },
+  "${ModID}:Oppressor": {
+    "NAME": "Oppressor",
+    "DESCRIPTION": "Deal !D! damage. NL Deals double damage to enemies smaller than you."
   },
   "${ModID}:PlanAhead": {
     "NAME": "Plan Ahead",
@@ -187,5 +209,9 @@
   "${ModID}:Unleash": {
     "NAME": "Unleash",
     "DESCRIPTION": "Deal !D! damage. NL This turn, your next Attack is played twice. NL Exhaust."
+  },
+  "${ModID}:Voices": {
+    "NAME": "Voices",
+    "DESCRIPTION": "Ethereal. NL Gain !B! Block. NL Discard 1 card. NL Exhaust."
   }
 }
