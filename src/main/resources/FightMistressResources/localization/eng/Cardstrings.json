@@ -10,6 +10,10 @@
     "DESCRIPTION": "At the end of your turn, shuffle a *Mach\u00a0Punch into your draw pile.",
     "UPGRADE_DESCRIPTION": "At the end of your turn, shuffle a *Mach\u00a0Punch+ into your draw pile."
   },
+  "${ModID}:Ambush": {
+    "NAME": "Ambush",
+    "DESCRIPTION": "Whenever a card is Exhausted, apply !M! ${ModID}:Exposed to ALL enemies."
+  },
   "${ModID}:Assault": {
     "NAME": "Assault",
     "DESCRIPTION": "Deal !D! damage. NL Shuffle !M! *Mach\u00a0Punches into your draw pile."
@@ -64,6 +68,10 @@
     "DESCRIPTION": "${ModID}:Sheathe a copy of the last Attack played this combat. NL Exhaust.",
     "UPGRADE_DESCRIPTION": "${ModID}:Sheathe a copy of the last Attack played this combat."
   },
+  "${ModID}:Dragonheart": {
+    "NAME": "Dragonheart",
+    "DESCRIPTION": "Whenever a card is created during combat, deal !M! damage to ALL enemies."
+  },
   "${ModID}:DragonPunch": {
     "NAME": "Dragon Punch",
     "DESCRIPTION": "Retain. NL Deal !D! damage. NL Apply !M! Vulnerable. NL Exhaust."
@@ -83,6 +91,10 @@
   "${ModID}:Haunted": {
     "NAME": "Haunted",
     "DESCRIPTION": "Gain !B! Block. NL Add !M! *Voices into your hand."
+  },
+  "${ModID}:Heroics": {
+    "NAME": "Heroics",
+    "DESCRIPTION": "Whenever you draw cards, increase the amount you draw by !M!."
   },
   "${ModID}:Iaido": {
     "NAME": "Iaido",
@@ -112,6 +124,11 @@
   "${ModID}:MachPunch": {
     "NAME": "Mach Punch",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! card{@@}{!M!|>1=s}. NL Exhaust."
+  },
+  "${ModID}:MartialForm": {
+    "NAME": "Martial Form",
+    "DESCRIPTION": "Ethereal. NL At the end of your turn, ${ModID}:Sheathe a card in your hand.",
+    "UPGRADE_DESCRIPTION": "At the end of your turn, ${ModID}:Sheathe a card in your hand."
   },
   "${ModID}:Mislead": {
     "NAME": "Mislead",

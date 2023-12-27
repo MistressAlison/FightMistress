@@ -46,5 +46,21 @@
   "${ModID}:AcceleratePlusPower": {
     "NAME": "Accelerate+",
     "DESCRIPTIONS": ["At the end of your turn, shuffle #b"," upgraded #yMach #yPunch into your draw pile."," upgraded #yMach #yPunches into your draw pile."]
+  },
+  "${ModID}:AmbushPower": {
+    "NAME": "Ambush",
+    "DESCRIPTIONS": ["Whenever a card is #yExhausted, apply #b"," #yExposed to ALL enemies."]
+  },
+  "${ModID}:MartialPower": {
+    "NAME": "Martial Form",
+    "DESCRIPTIONS": ["At the end of your turn, #ySheathe #b"," card in your hand."," cards in your hand."]
+  },
+  "${ModID}:DragonheartPower": {
+    "NAME": "Dragonheart",
+    "DESCRIPTIONS": ["Whenever a card is created during combat, deal #b"," damage to ALL enemies."]
+  },
+  "${ModID}:HeroicsPower": {
+    "NAME": "Heroics",
+    "DESCRIPTIONS": ["Whenever you draw cards, increase the amount you draw by #b","."]
   }
 }
