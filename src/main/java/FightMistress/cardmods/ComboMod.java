@@ -1,6 +1,7 @@
 package FightMistress.cardmods;
 
 import FightMistress.MainModfile;
+import FightMistress.actions.QueueCardInHandAction;
 import FightMistress.patches.CardModExtraPatches;
 import FightMistress.patches.CustomTags;
 import FightMistress.util.FormatHelper;
@@ -30,9 +31,9 @@ public class ComboMod extends AbstractCardModifier {
         if (group == Wiz.adp().hand) {
             if (otherCard.type == AbstractCard.CardType.ATTACK && Wiz.getAdjacentCards(card).contains(otherCard)) {
                 if (CardModExtraPatches.onOtherCardPlayedTarget != null) {
-                    Wiz.atb(new NewQueueCardAction(card, CardModExtraPatches.onOtherCardPlayedTarget, true, true));
+                    Wiz.atb(new QueueCardInHandAction(card, CardModExtraPatches.onOtherCardPlayedTarget));
                 } else {
-                    Wiz.atb(new NewQueueCardAction(card, true, true, true));
+                    Wiz.atb(new QueueCardInHandAction(card));
                 }
             }
         }

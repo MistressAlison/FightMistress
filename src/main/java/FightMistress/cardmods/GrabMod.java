@@ -1,6 +1,7 @@
 package FightMistress.cardmods;
 
 import FightMistress.MainModfile;
+import FightMistress.actions.QueueCardInHandAction;
 import FightMistress.patches.CustomTags;
 import FightMistress.util.FormatHelper;
 import FightMistress.util.Wiz;
@@ -74,7 +75,7 @@ public class GrabMod extends AbstractCardModifier implements GlowAdjacentModifie
     public void onUse(AbstractCard card, AbstractCreature target, UseCardAction action) {
         for (AbstractCard c : Wiz.getAdjacentCards(card)) {
             if (c.type == AbstractCard.CardType.ATTACK) {
-                Wiz.atb(new NewQueueCardAction(c, target, true, true));
+                Wiz.atb(new QueueCardInHandAction(c, target));
             }
         }
     }
