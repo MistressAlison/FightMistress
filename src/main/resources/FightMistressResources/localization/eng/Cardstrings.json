@@ -219,10 +219,6 @@
     "DESCRIPTION": "Deal !D! damage !M! times. NL Increase this card's hits by 1 this combat.",
     "EXTENDED_DESCRIPTION": ["Null Strike", "Single Strike", "Double Strike", "Triple Strike", "Quadruple Strike", "Quintuple Strike", "Sextuple Strike", "Septuple Strike", "Octuple Strike", "Nonuple Strike", "Omni Strike"]
   },
-  "${ModID}:Warstrike": {
-    "NAME": "Warstrike",
-    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL If the enemy already had Vulnerable, apply !M! Weak."
-  },
   "${ModID}:Unleash": {
     "NAME": "Unleash",
     "DESCRIPTION": "Deal !D! damage. NL This turn, your next Attack is played twice. NL Exhaust."
@@ -230,5 +226,9 @@
   "${ModID}:Voices": {
     "NAME": "Voices",
     "DESCRIPTION": "Ethereal. NL Gain !B! Block. NL Discard 1 card. NL Exhaust."
+  },
+  "${ModID}:Warstrike": {
+    "NAME": "Warstrike",
+    "DESCRIPTION": "Deal !D! damage. NL Apply !M! Vulnerable. NL If the enemy already had Vulnerable, apply !M! Weak."
   }
 }
