@@ -1,7 +1,6 @@
 package FightMistress.cards.tokens;
 
 import FightMistress.cards.abstracts.AbstractEasyCard;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DiscardAction;
 import com.megacrit.cardcrawl.actions.utility.SFXAction;
@@ -27,7 +26,7 @@ public class Voices extends AbstractEasyCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new SFXAction("ATTACK_PIERCING_WAIL"));
         addToBot(new VFXAction(p, new ShockWaveEffect(p.hb.cX, p.hb.cY, Settings.GREEN_TEXT_COLOR, ShockWaveEffect.ShockWaveType.CHAOTIC), 0.3F));
-        dmg(m, AbstractGameAction.AttackEffect.BLUNT_LIGHT);
+        blck();
         addToBot(new DiscardAction(p, p, 1, false));
     }
 
