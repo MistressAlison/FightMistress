@@ -15,8 +15,7 @@ public class Subjugate extends AbstractEasyCard {
 
     public Subjugate() {
         super(ID, 1, CardType.ATTACK, CardRarity.RARE, CardTarget.ENEMY);
-        baseDamage = damage = 8;
-        exhaust = true;
+        baseDamage = damage = 10;
     }
 
     @Override
