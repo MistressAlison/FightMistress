@@ -5,9 +5,18 @@
     "UPGRADE_DESCRIPTION": "Upgrade description",
     "EXTENDED_DESCRIPTION": ["Extra Stuff"]
   },
+  "${ModID}:Assault": {
+    "NAME": "Assault",
+    "DESCRIPTION": "Deal !D! damage. NL Shuffle !M! *Mach\u00a0Punch into your draw pile."
+  },
   "${ModID}:Backswing": {
     "NAME": "Backswing",
     "DESCRIPTION": "Deal !D! damage. NL Put a card from your discard pile into your hand."
+  },
+  "${ModID}:BagOfTricks": {
+    "NAME": "Bag of Tricks",
+    "DESCRIPTION": "Choose 1 of 3 random Attacks to add into your hand. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Choose 1 of 3 random Attacks to add into your hand. NL It costs 0 this turn. NL Exhaust."
   },
   "${ModID}:BeatDown": {
     "NAME": "Beat Down",
@@ -16,6 +25,10 @@
   "${ModID}:Blitz": {
     "NAME": "Blitz",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards."
+  },
+  "${ModID}:Bulwark": {
+    "NAME": "Bulwark",
+    "DESCRIPTION": "Gain !B! Block. NL If both adjacent cards are Attacks, return this to your hand."
   },
   "${ModID}:Bunker": {
     "NAME": "Bunker",
@@ -78,6 +91,10 @@
     "NAME": "Knee Smash",
     "DESCRIPTION": "Deal !D! damage. NL Deals double damage to enemies with Vulnerable."
   },
+  "${ModID}:MachPunch": {
+    "NAME": "Mach Punch",
+    "DESCRIPTION": "Deal !D! damage. NL Draw !M! card{@@}{!M!|>1=s}. NL Exhaust."
+  },
   "${ModID}:Mislead": {
     "NAME": "Mislead",
     "DESCRIPTION": "Gain !B! Block. NL Draw !M! card{@@}{!M!|>1=s}."
@@ -137,6 +154,10 @@
   "${ModID}:Strike": {
     "NAME": "Strike",
     "DESCRIPTION": "Deal !D! damage."
+  },
+  "${ModID}:Subjugate": {
+    "NAME": "Subjugate",
+    "DESCRIPTION": "Deal !D! damage. NL When this enemy dies, reduce the cost of a random card in your hand to 0 this combat."
   },
   "${ModID}:Subterfuge": {
     "NAME": "Subterfuge",

@@ -26,5 +26,9 @@
   "${ModID}:ChargedPower": {
     "NAME": "Charged",
     "DESCRIPTIONS": ["Your next Attack deals #b","% additional damage."]
+  },
+  "${ModID}:SubjugatePower": {
+    "NAME": "Subjugated",
+    "DESCRIPTIONS": ["When this enemy dies, a random card in your hand costs #b0 this combat.","When this enemy dies, #b"," random cards in your hand cost #b0 this combat."]
   }
 }
