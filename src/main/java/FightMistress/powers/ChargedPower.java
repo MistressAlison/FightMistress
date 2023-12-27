@@ -2,7 +2,6 @@ package FightMistress.powers;
 
 import FightMistress.MainModfile;
 import com.megacrit.cardcrawl.actions.common.ReducePowerAction;
-import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
 import com.megacrit.cardcrawl.actions.utility.UseCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
