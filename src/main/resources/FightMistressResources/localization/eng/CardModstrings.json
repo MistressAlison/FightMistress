@@ -40,5 +40,8 @@
   },
   "${ModID}:GrabMod": {
     "EXTENDED_DESCRIPTION": ["${ModID}:Grab. NL "]
+  },
+  "${ModID}:GrabSmallerMod": {
+    "EXTENDED_DESCRIPTION": [" NL If the enemy is smaller than you, ${ModID}:Grab it."]
   }
 }

@@ -136,7 +136,7 @@
   },
   "${ModID}:Oppressor": {
     "NAME": "Oppressor",
-    "DESCRIPTION": "Deal !D! damage. NL Deals double damage to enemies smaller than you."
+    "DESCRIPTION": "Deal !D! damage."
   },
   "${ModID}:PlanAhead": {
     "NAME": "Plan Ahead",

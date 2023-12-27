@@ -1,7 +1,9 @@
 package FightMistress.cards;
 
+import FightMistress.cardmods.GrabSmallerMod;
 import FightMistress.cards.abstracts.AbstractEasyCard;
 import FightMistress.util.Wiz;
+import basemod.helpers.CardModifierManager;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
@@ -18,8 +20,9 @@ public class Oppressor extends AbstractEasyCard {
     public final static String ID = makeID(Oppressor.class.getSimpleName());
 
     public Oppressor() {
-        super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
-        baseDamage = damage = 12;
+        super(ID, 1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        baseDamage = damage = 8;
+        CardModifierManager.addModifier(this, new GrabSmallerMod(true));
     }
 
     @Override
@@ -44,7 +47,7 @@ public class Oppressor extends AbstractEasyCard {
         }
     }
 
-    @Override
+    /*@Override
     public void calculateCardDamage(AbstractMonster mo) {
         int base = baseDamage;
         if (!Wiz.isBigger(mo)) {
@@ -53,11 +56,11 @@ public class Oppressor extends AbstractEasyCard {
         super.calculateCardDamage(mo);
         baseDamage = base;
         isDamageModified = damage != baseDamage;
-    }
+    }*/
 
     @Override
     public void upp() {
-        upgradeDamage(4);
+        upgradeDamage(3);
     }
 
     @Override
