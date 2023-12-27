@@ -5,6 +5,7 @@ import FightMistress.cards.abstracts.AbstractEasyCard;
 import FightMistress.util.GameSpeedController;
 import FightMistress.util.Wiz;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.green.Finisher;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
@@ -35,6 +36,13 @@ public class PowerShot extends AbstractEasyCard {
     @Override
     public boolean freeToPlay() {
         return super.freeToPlay() || (Wiz.isInCombat() && Wiz.getAdjacentCards(this).stream().anyMatch(c -> c.type == CardType.POWER));
+    }
+
+    public void triggerOnGlowCheck() {
+        this.glowColor = AbstractCard.BLUE_BORDER_GLOW_COLOR.cpy();
+        if (Wiz.getAdjacentCards(this).stream().anyMatch(c -> c.type == CardType.POWER)) {
+            this.glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+        }
     }
 
     @Override
