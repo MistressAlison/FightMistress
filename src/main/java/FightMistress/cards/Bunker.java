@@ -14,7 +14,7 @@ import static FightMistress.MainModfile.makeID;
 
 public class Bunker extends AbstractEasyCard implements GlowAdjacentCard {
     public final static String ID = makeID(Bunker.class.getSimpleName());
-    private static final Color glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+    private static final Color glowAdjacentColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
 
     public Bunker() {
         super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
@@ -41,7 +41,7 @@ public class Bunker extends AbstractEasyCard implements GlowAdjacentCard {
 
     @Override
     public Color getGlowColor(AbstractCard card) {
-        return glowColor;
+        return glowAdjacentColor;
     }
 
     @Override

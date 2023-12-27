@@ -12,7 +12,7 @@ import static FightMistress.MainModfile.makeID;
 
 public class Sanctuary extends AbstractEasyCard implements GlowAdjacentCard {
     public final static String ID = makeID(Sanctuary.class.getSimpleName());
-    private static final Color glowColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
+    private static final Color glowAdjacentColor = AbstractCard.GOLD_BORDER_GLOW_COLOR.cpy();
 
     //Passive effect located in DontExhaustOnUsePatches
     public Sanctuary() {
@@ -37,6 +37,6 @@ public class Sanctuary extends AbstractEasyCard implements GlowAdjacentCard {
 
     @Override
     public Color getGlowColor(AbstractCard card) {
-        return glowColor;
+        return glowAdjacentColor;
     }
 }

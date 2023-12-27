@@ -16,7 +16,7 @@ import static FightMistress.MainModfile.makeID;
 
 public class Burnout extends AbstractEasyCard implements GlowAdjacentCard {
     public final static String ID = makeID(Burnout.class.getSimpleName());
-    private static final Color glowColor = Settings.RED_TEXT_COLOR.cpy();
+    private static final Color glowAdjacentColor = Settings.RED_TEXT_COLOR.cpy();
 
     public Burnout() {
         super(ID, 1, CardType.SKILL, CardRarity.UNCOMMON, CardTarget.NONE);
@@ -43,6 +43,6 @@ public class Burnout extends AbstractEasyCard implements GlowAdjacentCard {
 
     @Override
     public Color getGlowColor(AbstractCard card) {
-        return glowColor;
+        return glowAdjacentColor;
     }
 }
