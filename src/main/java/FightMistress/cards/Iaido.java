@@ -20,7 +20,7 @@ public class Iaido extends AbstractEasyCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
         blck();
-        addToBot(new SheatheCardsAction(p.hand, p.hand.size(), c -> c.type == CardType.ATTACK));
+        addToBot(new SheatheCardsAction(p.hand, p.hand.size()));
     }
 
     @Override

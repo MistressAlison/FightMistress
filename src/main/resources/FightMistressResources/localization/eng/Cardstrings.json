@@ -132,7 +132,7 @@
   },
   "${ModID}:Iaido": {
     "NAME": "Iaido",
-    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Sheathe all Attacks in your hand. NL Exhaust."
+    "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Sheathe all cards in your hand. NL Exhaust."
   },
   "${ModID}:IAmAbove": {
     "NAME": "I Am Above",
