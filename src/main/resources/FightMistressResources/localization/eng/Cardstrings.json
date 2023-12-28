@@ -51,6 +51,10 @@
     "NAME": "Capture",
     "DESCRIPTION": "Apply !M! ${ModID}:Exposed."
   },
+  "${ModID}:Condense": {
+    "NAME": "Condense",
+    "DESCRIPTION": "Whenever a card is created during combat, gain {@@}{!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}."
+  },
   "${ModID}:DeathTouch": {
     "NAME": "Death Touch",
     "DESCRIPTION": "Exhaust.",
@@ -81,6 +85,10 @@
   "${ModID}:DragonPunch": {
     "NAME": "Dragon Punch",
     "DESCRIPTION": "Retain. NL Deal !D! damage. NL Apply !M! Vulnerable. NL Exhaust."
+  },
+  "${ModID}:Electrify": {
+    "NAME": "Electrify",
+    "DESCRIPTION": "Gain !M! ${ModID}:Charged. NL Whenever you are attacked this turn, deal !M! damage back."
   },
   "${ModID}:Feint": {
     "NAME": "Feint",
@@ -123,13 +131,33 @@
     "DESCRIPTION": "At the start of your turn, add a *Voices into your hand.",
     "UPGRADE_DESCRIPTION": "Innate. NL At the start of your turn, add a *Voices into your hand."
   },
+  "${ModID}:InvokeTheMind": {
+    "NAME": "Invoke The Mind",
+    "DESCRIPTION": "Draw !M! cards. NL Shuffle an *Invoke\u00a0The\u00a0Body into your draw pile. NL Exhaust."
+  },
+  "${ModID}:InvokeTheBody": {
+    "NAME": "Invoke The Body",
+    "DESCRIPTION": "Gain {@@}{!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}. NL Shuffle an *Invoke\u00a0The\u00a0Spirit into your draw pile. NL Exhaust."
+  },
+  "${ModID}:InvokeTheSpirit": {
+    "NAME": "Invoke The Spirit",
+    "DESCRIPTION": "Deal !D! damage. NL Shuffle an *Invoke\u00a0The\u00a0Mind into your draw pile. NL Exhaust."
+  },
   "${ModID}:Jab": {
     "NAME": "Jab",
     "DESCRIPTION": "Deal !D! damage."
   },
+  "${ModID}:KeepAway": {
+    "NAME": "Keep Away",
+    "DESCRIPTION": "Gain !B! Block. NL Apply !M! ${ModID}:Exposed."
+  },
   "${ModID}:KneeSmash": {
     "NAME": "Knee Smash",
     "DESCRIPTION": "Deal !D! damage. NL Deals double damage to enemies with Vulnerable."
+  },
+  "${ModID}:Lariat": {
+    "NAME": "Lariat",
+    "DESCRIPTION": "Apply !M! ${ModID}:Exposed."
   },
   "${ModID}:LeapOfFaith": {
     "NAME": "Leap of Faith",
@@ -159,6 +187,10 @@
   "${ModID}:Oppressor": {
     "NAME": "Oppressor",
     "DESCRIPTION": "Deal !D! damage."
+  },
+  "${ModID}:Overexertion": {
+    "NAME": "Overexertion",
+    "DESCRIPTION": "Gain {@@}{!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}. NL Draw !M! cards. NL Shuffle a *Dazed into your draw pile. NL Exhaust."
   },
   "${ModID}:PlanAhead": {
     "NAME": "Plan Ahead",
@@ -223,6 +255,10 @@
   "${ModID}:Subterfuge": {
     "NAME": "Subterfuge",
     "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Sheathe a card in your hand."
+  },
+  "${ModID}:Surge": {
+    "NAME": "Surge",
+    "DESCRIPTION": "Gain !B! Block. NL Gain !M! ${ModID}:Charged."
   },
   "${ModID}:Sweep": {
     "NAME": "Sweep",
