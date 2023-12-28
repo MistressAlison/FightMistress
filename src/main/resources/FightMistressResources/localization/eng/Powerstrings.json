@@ -74,5 +74,13 @@
   "${ModID}:CondensePower": {
     "NAME": "Condense",
     "DESCRIPTIONS": ["Whenever a card is created during combat, gain #b"," [E] ."]
+  },
+  "${ModID}:BloodRitePower": {
+    "NAME": "Blood Rite",
+    "DESCRIPTIONS": ["Your Attacks deals additional damage equal to their target's #yVulnerable.","Your Attacks deal additional damage equal to #b"," times their target's #yVulnerable."]
+  },
+  "${ModID}:ParryPower": {
+    "NAME": "Parry",
+    "DESCRIPTIONS": ["At the end of your turn, gain #b"," #yBlock for each #ySheathed card."]
   }
 }

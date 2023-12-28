@@ -35,6 +35,14 @@
     "NAME": "Blitz",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! cards."
   },
+  "${ModID}:BloodRite": {
+    "NAME": "Blood Rite",
+    "DESCRIPTION": "Your Attacks deal additional damage equal to {!M!|>1=!M! times }{@@}their target's Vulnerable."
+  },
+  "${ModID}:BoltStrike": {
+    "NAME": "Bolt Strike",
+    "DESCRIPTION": "Deal !D! damage. NL ${ModID}:Charged affects this card !M! times."
+  },
   "${ModID}:Bulwark": {
     "NAME": "Bulwark",
     "DESCRIPTION": "Gain !B! Block. NL If both adjacent cards are Attacks, return this to your hand."
@@ -98,9 +106,17 @@
     "NAME": "Fortify",
     "DESCRIPTION": "Whenever a card is Exhausted, gain !M! Block."
   },
+  "${ModID}:Frenzy": {
+    "NAME": "Frenzy",
+    "DESCRIPTION": "Apply !M! Vulnerable and ${ModID}:Exposed to ALL enemies. NL Exhaust."
+  },
   "${ModID}:FromBeyond": {
     "NAME": "From Beyond",
     "DESCRIPTION": "${ModID}:Sheathe a card in your exhaust pile. NL Exhaust."
+  },
+  "${ModID}:Grappler": {
+    "NAME": "Grappler",
+    "DESCRIPTION": "Give adjacent cards ${ModID}:Grab this combat. NL Exhaust."
   },
   "${ModID}:GravityHammer": {
     "NAME": "Gravity Hammer",
@@ -192,6 +208,10 @@
     "NAME": "Overexertion",
     "DESCRIPTION": "Gain {@@}{!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}. NL Draw !M! cards. NL Shuffle a *Dazed into your draw pile. NL Exhaust."
   },
+  "${ModID}:Parry": {
+    "NAME": "Parry",
+    "DESCRIPTION": "At the end of your turn, gain !M! Block for each ${ModID}:Sheathed card."
+  },
   "${ModID}:PlanAhead": {
     "NAME": "Plan Ahead",
     "DESCRIPTION": "Gain !B! Block. NL Rearrange your hand."
@@ -208,6 +228,10 @@
     "NAME": "Puncture",
     "DESCRIPTION": "stslib:Persist !stslib:persist!. NL Deal !D! damage twice."
   },
+  "${ModID}:QiBlast": {
+    "NAME": "Qi Blast",
+    "DESCRIPTION": "Exhaust a card. NL Apply !M! Weak."
+  },
   "${ModID}:QuickGuard": {
     "NAME": "Quick Guard",
     "DESCRIPTION": "Gain !B! Block."
@@ -215,6 +239,10 @@
   "${ModID}:QuickSmash": {
     "NAME": "Quick Smash",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! card{@@}{!M!|>1=s}."
+  },
+  "${ModID}:Raikiri": {
+    "NAME": "Raikiri",
+    "DESCRIPTION": "Gain !M! ${ModID}:Charged. NL ${ModID}:Sheathe an adjacent card."
   },
   "${ModID}:Rally": {
     "NAME": "Rally",
@@ -227,6 +255,14 @@
   "${ModID}:Sanctuary": {
     "NAME": "Sanctuary",
     "DESCRIPTION": "Gain !B! Block. NL While held, adjacent cards will not Exhaust on play."
+  },
+  "${ModID}:ShapedByFire": {
+    "NAME": "Shaped By Fire",
+    "DESCRIPTION": "Gain {@@}{!M!|1=[E]|2=[E] [E]|3=[E] [E] [E]|@=!M! [E]}. NL Add a *Burn into your hand."
+  },
+  "${ModID}:Shatter": {
+    "NAME": "Shatter",
+    "DESCRIPTION": "Deal !D! damage. NL Apply ${ModID}:Exposed equal to unblocked damage dealt."
   },
   "${ModID}:ShieldBash": {
     "NAME": "Shield Bash",
@@ -271,6 +307,10 @@
   "${ModID}:Throw": {
     "NAME": "Throw",
     "DESCRIPTION": "Apply !M! Vulnerable. NL The next Attack you play costs 0."
+  },
+  "${ModID}:TormentedSpirit": {
+    "NAME": "Tormented Spirit",
+    "DESCRIPTION": "Deal !D! damage to ALL enemies. Deals additional damage for each card in your exhaust pile."
   },
   "${ModID}:TripleStrike": {
     "NAME": "Triple Strike",
