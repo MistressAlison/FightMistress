@@ -7,6 +7,7 @@ import FightMistress.patches.CustomTags;
 import FightMistress.util.FormatHelper;
 import FightMistress.util.Wiz;
 import basemod.abstracts.AbstractCardModifier;
+import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.utility.NewQueueCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
@@ -46,7 +47,7 @@ public class ComboMod extends AbstractCardModifier {
 
     @Override
     public boolean shouldApply(AbstractCard card) {
-        return !card.hasTag(CustomTags.MISTRESS_COMBO);
+        return !CardModifierManager.hasModifier(card, ID);
     }
 
     @Override

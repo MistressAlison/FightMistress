@@ -88,7 +88,7 @@ public class GrabSmallerMod extends AbstractCardModifier implements GlowAdjacent
 
     @Override
     public boolean shouldApply(AbstractCard card) {
-        return !card.hasTag(CustomTags.MISTRESS_GRAB);
+        return !CardModifierManager.hasModifier(card, ID);
     }
 
     @Override

@@ -75,7 +75,11 @@ public class GrabMod extends AbstractCardModifier implements GlowAdjacentModifie
     public void onUse(AbstractCard card, AbstractCreature target, UseCardAction action) {
         for (AbstractCard c : Wiz.getAdjacentCards(card)) {
             if (c.type == AbstractCard.CardType.ATTACK) {
-                Wiz.atb(new QueueCardInHandAction(c, target));
+                if (target != null) {
+                    Wiz.atb(new QueueCardInHandAction(c, target));
+                } else {
+                    Wiz.atb(new QueueCardInHandAction(c));
+                }
             }
         }
     }
@@ -87,7 +91,7 @@ public class GrabMod extends AbstractCardModifier implements GlowAdjacentModifie
 
     @Override
     public boolean shouldApply(AbstractCard card) {
-        return !card.hasTag(CustomTags.MISTRESS_GRAB);
+        return !CardModifierManager.hasModifier(card, ID);
     }
 
     @Override
