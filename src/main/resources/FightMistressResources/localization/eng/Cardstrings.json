@@ -120,7 +120,7 @@
   },
   "${ModID}:GravityHammer": {
     "NAME": "Gravity Hammer",
-    "DESCRIPTION": "Deal !D! damage. NL Deal equal damage to adjacent enemies."
+    "DESCRIPTION": "Deal !D!X damage. NL Deal equal damage to adjacent enemies."
   },
   "${ModID}:Haunted": {
     "NAME": "Haunted",

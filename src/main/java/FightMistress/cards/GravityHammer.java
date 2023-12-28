@@ -1,9 +1,8 @@
 package FightMistress.cards;
 
+import FightMistress.actions.EasyXCostAction;
 import FightMistress.cards.abstracts.AbstractEasyCard;
-import FightMistress.damageMods.PiercingDamage;
 import FightMistress.util.Wiz;
-import com.evacipated.cardcrawl.mod.stslib.damagemods.DamageModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
@@ -20,9 +19,8 @@ public class GravityHammer extends AbstractEasyCard {
     public final static String ID = makeID(GravityHammer.class.getSimpleName());
 
     public GravityHammer() {
-        super(ID, 2, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
-        baseDamage = damage = 13;
-        DamageModifierManager.addModifier(this, new PiercingDamage());
+        super(ID, -1, CardType.ATTACK, CardRarity.UNCOMMON, CardTarget.ENEMY);
+        baseDamage = damage = 6;
     }
 
     @Override
@@ -32,15 +30,24 @@ public class GravityHammer extends AbstractEasyCard {
             Wiz.forAdjacentMonsters(m, mon -> addToBot(new VFXAction(new WeightyImpactEffect(mon.hb.cX, mon.hb.cY))));
         }
         addToBot(new WaitAction(0.8F));
-        addToBot(new DamageAction(m, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
-        if (m != null) {
-            Wiz.forAdjacentMonsters(m, mon -> addToBot(new DamageAction(mon, new DamageInfo(p, damage, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE)));
-        }
+        addToBot(new EasyXCostAction(this, (base, args) -> {
+            int multiplier = base;
+            for (int i : args) {
+                multiplier += i;
+            }
+            if (m != null) {
+                int finalMulti = multiplier;
+                Wiz.forAdjacentMonsters(m, mon -> addToTop(new DamageAction(mon, new DamageInfo(p, damage*finalMulti, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE)));
+            }
+            addToTop(new DamageAction(m, new DamageInfo(p, damage*multiplier, damageTypeForTurn), AbstractGameAction.AttackEffect.NONE));
+            return true;
+        }));
+
     }
 
     @Override
     public void upp() {
-        upgradeDamage(4);
+        upgradeDamage(3);
     }
 
     @Override
