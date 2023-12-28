@@ -62,5 +62,13 @@
   "${ModID}:HeroicsPower": {
     "NAME": "Heroics",
     "DESCRIPTIONS": ["Whenever you draw cards, increase the amount you draw by #b","."]
+  },
+  "${ModID}:FortifyPower": {
+    "NAME": "Fortify",
+    "DESCRIPTIONS": ["Whenever a card is #yExhausted, gain #b"," #yBlock."]
+  },
+  "${ModID}:OffensiveGuardPower": {
+    "NAME": "Offensive Guard",
+    "DESCRIPTIONS": ["Whenever you fully #yBlock an Attack, gain #b"," #yCharged."]
   }
 }

@@ -51,6 +51,11 @@
     "NAME": "Capture",
     "DESCRIPTION": "Apply !M! ${ModID}:Exposed."
   },
+  "${ModID}:DeathTouch": {
+    "NAME": "Death Touch",
+    "DESCRIPTION": "Exhaust.",
+    "UPGRADE_DESCRIPTION": "Upgrade adjacent Attacks. NL Exhaust."
+  },
   "${ModID}:Defend": {
     "NAME": "Defend",
     "DESCRIPTION": "Gain !B! Block."
@@ -79,6 +84,10 @@
   "${ModID}:Feint": {
     "NAME": "Feint",
     "DESCRIPTION": "Deal !D! damage. NL Gain !M! ${ModID}:Charged. NL Ignores Block."
+  },
+  "${ModID}:Fortify": {
+    "NAME": "Fortify",
+    "DESCRIPTION": "Whenever a card is Exhausted, gain !M! Block."
   },
   "${ModID}:FromBeyond": {
     "NAME": "From Beyond",
@@ -121,6 +130,14 @@
     "NAME": "Knee Smash",
     "DESCRIPTION": "Deal !D! damage. NL Deals double damage to enemies with Vulnerable."
   },
+  "${ModID}:LeapOfFaith": {
+    "NAME": "Leap of Faith",
+    "DESCRIPTION": "Draw !M! cards. NL Rearrange your hand."
+  },
+  "${ModID}:LightningPalm": {
+    "NAME": "Lightning Palm",
+    "DESCRIPTION": "Gain !M! ${ModID}:Charged. NL Add !M! *Mach\u00a0Punches into your hand. NL Exhaust."
+  },
   "${ModID}:MachPunch": {
     "NAME": "Mach Punch",
     "DESCRIPTION": "Deal !D! damage. NL Draw !M! card{@@}{!M!|>1=s}. NL Exhaust."
@@ -133,6 +150,10 @@
   "${ModID}:Mislead": {
     "NAME": "Mislead",
     "DESCRIPTION": "Gain !B! Block. NL Draw !M! card{@@}{!M!|>1=s}."
+  },
+  "${ModID}:OffensiveGuard": {
+    "NAME": "Offensive Guard",
+    "DESCRIPTION": "Whenever you fully Block an Attack, gain !M! ${ModID}:Charged."
   },
   "${ModID}:Oppressor": {
     "NAME": "Oppressor",
@@ -218,6 +239,10 @@
     "NAME": "Triple Strike",
     "DESCRIPTION": "Deal !D! damage !M! times. NL Increase this card's hits by 1 this combat.",
     "EXTENDED_DESCRIPTION": ["Null Strike", "Single Strike", "Double Strike", "Triple Strike", "Quadruple Strike", "Quintuple Strike", "Sextuple Strike", "Septuple Strike", "Octuple Strike", "Nonuple Strike", "Omni Strike"]
+  },
+  "${ModID}:Truesight": {
+    "NAME": "Truesight",
+    "DESCRIPTION": "Give adjacent cards ${ModID}:Combo this combat. NL Exhaust."
   },
   "${ModID}:Unleash": {
     "NAME": "Unleash",
