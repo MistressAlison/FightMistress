@@ -1,4 +1,4 @@
-package FightMistress.cards;
+package FightMistress.cutStuff;
 
 import FightMistress.cards.abstracts.AbstractEasyCard;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;

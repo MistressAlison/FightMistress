@@ -130,6 +130,10 @@
     "NAME": "Heroics",
     "DESCRIPTION": "Whenever you draw cards, increase the amount you draw by !M!."
   },
+  "${ModID}:HiddenBlade": {
+    "NAME": "Hidden Blade",
+    "DESCRIPTION": "${ModID}:Sheathe an Attack in your hand."
+  },
   "${ModID}:Iaido": {
     "NAME": "Iaido",
     "DESCRIPTION": "Gain !B! Block. NL ${ModID}:Sheathe all cards in your hand. NL Exhaust."
