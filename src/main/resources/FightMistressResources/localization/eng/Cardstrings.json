@@ -306,7 +306,7 @@
   },
   "${ModID}:Throw": {
     "NAME": "Throw",
-    "DESCRIPTION": "Apply !M! Vulnerable. NL The next Attack you play costs 0."
+    "DESCRIPTION": "Apply !M! Weak. NL Apply !M! Vulnerable. NL The next Attack you play costs 0."
   },
   "${ModID}:TormentedSpirit": {
     "NAME": "Tormented Spirit",
