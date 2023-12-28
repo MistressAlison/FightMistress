@@ -26,7 +26,7 @@ public class QiBlast extends AbstractEasyCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
         addToBot(new ExhaustAction(1, false, false, false));
         addToBot(new SFXAction("ATTACK_MAGIC_BEAM_SHORT", 0.5F));
-        addToBot(new VFXAction(new SmallLaserEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, this.hb.cX, this.hb.cY), 0.1F));
+        addToBot(new VFXAction(new SmallLaserEffect(AbstractDungeon.player.hb.cX, AbstractDungeon.player.hb.cY, m.hb.cX, m.hb.cY), 0.1F));
         Wiz.applyToEnemy(m, new WeakPower(m, magicNumber, false));
     }
 
