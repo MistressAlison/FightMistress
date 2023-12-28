@@ -70,5 +70,9 @@
   "${ModID}:OffensiveGuardPower": {
     "NAME": "Offensive Guard",
     "DESCRIPTIONS": ["Whenever you fully #yBlock an Attack, gain #b"," #yCharged."]
+  },
+  "${ModID}:CondensePower": {
+    "NAME": "Condense",
+    "DESCRIPTIONS": ["Whenever a card is created during combat, gain #b"," [E] ."]
   }
 }
