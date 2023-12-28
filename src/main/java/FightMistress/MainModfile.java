@@ -356,7 +356,9 @@ public class MainModfile implements
 
     @Override
     public int receiveOnPlayerDamaged(int i, DamageInfo damageInfo) {
-        SheathedCardManager.playNextCard(damageInfo);
+        if (damageInfo.type == DamageInfo.DamageType.NORMAL) {
+            SheathedCardManager.playNextCard(damageInfo);
+        }
         return i;
     }
 }
