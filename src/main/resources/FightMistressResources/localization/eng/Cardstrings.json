@@ -226,7 +226,7 @@
   },
   "${ModID}:Puncture": {
     "NAME": "Puncture",
-    "DESCRIPTION": "stslib:Persist !stslib:persist!. NL Deal !D! damage twice."
+    "DESCRIPTION": "Deal !D! damage twice. NL Apply !M! Vulnerable"
   },
   "${ModID}:QiBlast": {
     "NAME": "Qi Blast",
