@@ -28,7 +28,9 @@ public class Unleash extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeDamage(4);
+        //upgradeDamage(4);
+        exhaust = false;
+        uDesc();
     }
 
     @Override

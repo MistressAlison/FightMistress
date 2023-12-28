@@ -246,7 +246,8 @@
   },
   "${ModID}:Unleash": {
     "NAME": "Unleash",
-    "DESCRIPTION": "Deal !D! damage. NL This turn, your next Attack is played twice. NL Exhaust."
+    "DESCRIPTION": "Deal !D! damage. NL This turn, your next Attack is played twice. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL This turn, your next Attack is played twice."
   },
   "${ModID}:Voices": {
     "NAME": "Voices",
