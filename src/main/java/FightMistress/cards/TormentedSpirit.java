@@ -17,7 +17,7 @@ public class TormentedSpirit extends AbstractEasyCard {
     public final static String ID = makeID(TormentedSpirit.class.getSimpleName());
 
     public TormentedSpirit() {
-        super(ID, 1, CardType.ATTACK, CardRarity.RARE, CardTarget.ENEMY);
+        super(ID, 1, CardType.ATTACK, CardRarity.RARE, CardTarget.ALL_ENEMY);
         baseDamage = damage = 9;
         isMultiDamage = true;
     }
