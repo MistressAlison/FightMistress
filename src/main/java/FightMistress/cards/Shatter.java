@@ -17,7 +17,7 @@ public class Shatter extends AbstractEasyCard {
 
     public Shatter() {
         super(ID, 1, CardType.ATTACK, CardRarity.RARE, CardTarget.ENEMY);
-        baseDamage = damage = 7;
+        baseDamage = damage = 5;
     }
 
     @Override
@@ -31,7 +31,7 @@ public class Shatter extends AbstractEasyCard {
 
     @Override
     public void upp() {
-        upgradeDamage(3);
+        upgradeDamage(2);
     }
 
     @Override
