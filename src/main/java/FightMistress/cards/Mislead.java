@@ -13,8 +13,8 @@ public class Mislead extends AbstractEasyCard {
 
     public Mislead() {
         super(ID, 1, CardType.SKILL, CardRarity.COMMON, CardTarget.SELF);
-        baseBlock = block = 7;
-        baseMagicNumber = magicNumber = 1;
+        baseBlock = block = 5;
+        baseMagicNumber = magicNumber = 2;
     }
 
     @Override
