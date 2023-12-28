@@ -27,7 +27,7 @@ public class Sanctuary extends AbstractEasyCard implements GlowAdjacentCard {
 
     @Override
     public void upp() {
-        upgradeMagicNumber(1);
+        upgradeBlock(3);
     }
 
     @Override
