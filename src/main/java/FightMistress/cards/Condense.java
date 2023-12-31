@@ -1,7 +1,7 @@
 package FightMistress.cards;
 
 import FightMistress.cards.abstracts.AbstractEasyCard;
-import FightMistress.powers.CondenssePower;
+import FightMistress.powers.CondensePower;
 import FightMistress.util.Wiz;
 import com.megacrit.cardcrawl.cards.purple.Fasting;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -19,7 +19,7 @@ public class Condense extends AbstractEasyCard {
 
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
-        Wiz.applyToSelf(new CondenssePower(p, magicNumber));
+        Wiz.applyToSelf(new CondensePower(p, magicNumber));
     }
 
     @Override

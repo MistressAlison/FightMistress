@@ -9,13 +9,13 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
-public class CondenssePower extends AbstractPower implements OnCreateCardPower {
-    public static final String POWER_ID = MainModfile.makeID(CondenssePower.class.getSimpleName());
+public class CondensePower extends AbstractPower implements OnCreateCardPower {
+    public static final String POWER_ID = MainModfile.makeID(CondensePower.class.getSimpleName());
     private static final PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
     public static final String NAME = powerStrings.NAME;
     public static final String[] DESCRIPTIONS = powerStrings.DESCRIPTIONS;
 
-    public CondenssePower(AbstractCreature owner, int amount) {
+    public CondensePower(AbstractCreature owner, int amount) {
         this.ID = POWER_ID;
         this.name = NAME;
         this.owner = owner;
